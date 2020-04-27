@@ -10,7 +10,7 @@ Build a Dockerfile that has created aliases. More details and instructions are p
 | `.dockerignore` | A list of files that will not be copied during build. |
 | `captain-definition` | Used by CapRover for deployment. |
 | `Dockerfile` | **Implemention of the alias bash command**. |
-| `README.md` | Replace this `README` with content describing the purpose of your project. |
+| `README.md` | Information describing this project |
 
 ## 📦 Building & Running
 
@@ -19,7 +19,7 @@ Build a Dockerfile that has created aliases. More details and instructions are p
 | `USERNAME` | Your DockerHub username. |
 | `IMAGE_NAME` | Name of the repository created above. |
 | `CONTAINER_NAME` | Choose a name for this container.<br>Can be the same as `IMAGE_NAME`. |
-| `ALIAS_NAME` | Based on the alias provided use name hello, learnmore or message.|
+| `ALIAS_NAME` | Based on the aliases provided use hello, learnmore or message.|
 
 ## Test out different aliases 
 ### 1️⃣ Build
