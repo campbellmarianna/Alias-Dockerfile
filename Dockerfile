@@ -1,12 +1,8 @@
 # ------------------------------- DO NOT MODIFY ------------------------------ #
-FROM alpine:latest
-# ------------------------- IMPLEMENT SOLUTION BELOW ------------------------- #
-
-# Install fortune:
-RUN apk add fortune
-
-# Print out the description of the fortune command:
-RUN echo "Fortune is a program that prints out silly quotes. It doesn't really tell you any fortunes.'"
+FROM ubuntu:latest
+# ------------------------- IMPLEMENT SOLUTION BELOW -------------------------
+# Install figlet:
+RUN apt-get update && apt-get install -y figlet
 
 # Run the fortune command:
-CMD ["fortune"]
+CMD ["figlet", "hello docker"]

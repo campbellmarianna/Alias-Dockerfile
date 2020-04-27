@@ -1,10 +1,7 @@
 # ------------------------------- DO NOT MODIFY ------------------------------ #
 FROM alpine:latest
 
-RUN alias shortName="echo 'This is fun'"
+RUN echo 'alias hi="echo hello"' >> ~/.bashrc
 
 # Print out the the description of the fortune command:
 RUN echo "Alias are like custom shortcuts used to represent a command (or set of commands) executed with or without custom options."
-
-# Run the fortune command:
-CMD ["shortName"]
