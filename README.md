@@ -18,6 +18,7 @@
 | `IMAGE_NAME` | Name of the repository created above. |
 | `CONTAINER_NAME` | Choose a name for this container.<br>Can be the same as `IMAGE_NAME`. |
 
+## Test out different aliases 
 ### 1️⃣ Build
 
 _Builds the `Dockerfile` found at the current path (`.`)._
@@ -31,7 +32,7 @@ $ docker build -t USERNAME/IMAGE_NAME .
 _Runs the `IMAGE_NAME` image. Deletes the container after executing the `CMD`_.
 
 ```bash
-$ docker run CONTAINER_NAME IMAGE_NAME hello
+$ docker run --rm CONTAINER_NAME IMAGE_NAME hello
 ```
 
 ### Credits
