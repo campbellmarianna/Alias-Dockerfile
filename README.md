@@ -18,7 +18,6 @@ Build a Dockerfile that has created aliases. More details and instructions are p
 | -------- | ----------- |
 | `USERNAME` | Your DockerHub username. |
 | `IMAGE_NAME` | Name of the repository created above. |
-| `CONTAINER_NAME` | Choose a name for this container.<br>Can be the same as `IMAGE_NAME`. |
 | `ALIAS_NAME` | Based on the aliases provided use hello, learnmore or message.|
 
 ## Test out different aliases 
@@ -32,7 +31,7 @@ $ docker build -t USERNAME/IMAGE_NAME .
 
 ### 2️⃣ Run & Test
 
-_Runs the `IMAGE_NAME` image. Deletes the container after executing the `CMD`_.
+_Runs the `IMAGE_NAME` image.
 
 ```bash
 $ docker run USERNAME/IMAGE_NAME ALIAS_NAME
