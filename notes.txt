@@ -1,0 +1,11 @@
+Helpful resource: https://stackoverflow.com/questions/36388465/how-to-set-bash-aliases-for-docker-containers-in-dockerfile
+
+# potential steps to get alias added and run in dockerfile
+
+install ubuntu 
+# Let’s start by running an interactive shell in a ubuntu container:
+run docker container run -ti
+add
+
+# Install fortune:
+# RUN echo 'alias bew-docker= ‘open -a “Google Chrome” https://make.sc/bew2.2’ '

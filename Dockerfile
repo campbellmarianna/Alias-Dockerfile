@@ -1,13 +1,12 @@
 # ------------------------------- DO NOT MODIFY ------------------------------ #
 FROM alpine:latest
-# ------------------------- IMPLEMENT SOLUTION BELOW -------------------------
+# ------------------------- IMPLEMENT SOLUTION BELOW ------------------------- #
 
-# Open Bash Profile
-# save it
-# exit it
-# Run it
-# Print out the the description of the fortune command:
-RUN echo "Alias are like custom shortcuts used to represent a command (or set of commands) executed with or without custom options."
+# Install fortune:
+RUN apk add fortune
+
+# Print out the description of the fortune command:
+RUN echo "Fortune is a program that prints out silly quotes. It doesn't really tell you any fortunes.'"
 
 # Run the fortune command:
-CMD ["bew-docker"]
+CMD ["fortune"]
