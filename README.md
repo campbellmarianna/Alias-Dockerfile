@@ -1,5 +1,7 @@
 # Alias Dockerfile
 
+Build a Dockerfile that has created aliases. More details and instructions are provided below.
+
 ## 📂 Project Files
 
 | Filename | Description |
@@ -17,7 +19,7 @@
 | `USERNAME` | Your DockerHub username. |
 | `IMAGE_NAME` | Name of the repository created above. |
 | `CONTAINER_NAME` | Choose a name for this container.<br>Can be the same as `IMAGE_NAME`. |
-| `ALIAS_NAME` | hello or learnmore or message based on the alias provided. |
+| `ALIAS_NAME` | Based on the alias provided use name hello, learnmore or message.|
 
 ## Test out different aliases 
 ### 1️⃣ Build
