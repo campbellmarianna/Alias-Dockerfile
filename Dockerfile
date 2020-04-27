@@ -1,8 +1,11 @@
 # ------------------------------- DO NOT MODIFY ------------------------------ #
-FROM ubuntu:latest
+FROM alpine:latest
 # ------------------------- IMPLEMENT SOLUTION BELOW -------------------------
-# Install figlet:
-RUN apt-get update && apt-get install -y figlet
+# Install bash and create alias:
+RUN apk add bash
 
-# Run the fortune command:
-CMD ["figlet", "hello docker"]
+RUN echo -e '#!/bin/bash\necho hello software engineer' > /usr/bin/hi && \
+    chmod +x /usr/bin/hi
+
+# Print out the the description of the alias command:
+RUN echo "Alias are like custom shortcuts used to represent a command (or set of commands) executed with or without custom options."
