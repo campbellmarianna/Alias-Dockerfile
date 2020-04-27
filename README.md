@@ -17,6 +17,7 @@
 | `USERNAME` | Your DockerHub username. |
 | `IMAGE_NAME` | Name of the repository created above. |
 | `CONTAINER_NAME` | Choose a name for this container.<br>Can be the same as `IMAGE_NAME`. |
+| `ALIAS_NAME` | hello or learnmore or message based on the alias provided. |
 
 ## Test out different aliases 
 ### 1️⃣ Build
@@ -32,7 +33,7 @@ $ docker build -t USERNAME/IMAGE_NAME .
 _Runs the `IMAGE_NAME` image. Deletes the container after executing the `CMD`_.
 
 ```bash
-$ docker run --rm CONTAINER_NAME IMAGE_NAME hello
+$ docker run USERNAME/IMAGE_NAME ALIAS_NAME
 ```
 
 ### Credits
